@@ -15,9 +15,7 @@ module.exports = function(grunt) {
             livereload: true, // needed to run LiveReload
           }
         }
-      }
-
-   
+      }   
   });
 
   grunt.loadNpmTasks('grunt-sass');
