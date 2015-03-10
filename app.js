@@ -22,7 +22,7 @@ app.use(express.static(basePath+'/public'));
 app.use('/', require('./controllers/app').app);
 
 
-//mongo gridfs file system
+//mongo gridfs file system http://docs.mongodb.org/manual/core/gridfs/
 
 // Set server port
 app.listen(4000);
