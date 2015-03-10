@@ -18,7 +18,11 @@ if (theme) {
 app.set('views', basePath +  '/views');
 app.set('view engine', 'jade'); // use either jade or ejs       
 
-app.use(express.static('public'));
+app.use(express.static(basePath+'/public'));
+app.use('/', require('./controllers/app').app);
+
+
+//mongo gridfs file system
 
 // Set server port
 app.listen(4000);
